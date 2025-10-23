@@ -8,16 +8,13 @@
       margin: 0;
       height: 100%;
     }
-
     main {
       padding: 0 20%;
     }
-
     h1, p {
       color: #000;
       text-align: center;
     }
-    
     p{
     line-height: 1.6;
     color: #555;
@@ -54,18 +51,15 @@
     color: #000;
     background-color: #fff;
   }
-
   .navimg {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     padding: 0% 20%;
   }
-
   .navimg .navbar img{
     height: 125px;
   }
-
   @media (max-width: 1318px){
     .navimg .navbar img{
       height: 150px;
@@ -80,7 +74,7 @@
   .background-image {
     position: relative;
     background: url("images/build_site.png") center/cover no-repeat;
-    height: 55%;
+    height: auto;
     color: #fff;
     overflow: hidden;
   }
@@ -142,34 +136,21 @@
       font-weight: bolder;
       letter-spacing: 0;
     }
-    .background-image{
-      height: 60%;
-    }
-  }
-  @media (max-width:900px){
-    .background-image{
-      height: 50%;
-    } 
   }
 /* ============================================
   CONTENT SECTIONS
 ============================================ */
-
   .reviews{
     padding: 0 10%;
   }
-
   .review-button{
     text-align: center;
   }
-
   .portfolio {
     max-width: 1200px;
     margin: 50px auto;
     padding: 0 20px;
   }
-
-  /* Each row of images */
   .row {
     display: flex;
     gap: 20px;
@@ -177,8 +158,6 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-
-  /* Each column (image container) */
   .column {
     flex: 1 1 30%;
     max-width: 30%;
@@ -188,8 +167,6 @@
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
   }
-
-  /* Images themselves */
   .column img {
     width: 100%;
     height: 250px;
@@ -197,22 +174,11 @@
     transition: transform 0.5s ease, filter 0.3s ease;
     display: block;
   }
-
-  /* Hover effect */
   .column:hover img {
     transform: scale(1.05);
     filter: brightness(0.9);
     cursor: pointer;
   }
-
-  /* Responsive layout */
-  /* @media (max-width: 00px) {
-    .column {
-      flex: 1 1 45%;
-      max-width: 45%;
-    }
-  } */
-
   @media (max-width: 900px) {
     .column {
       flex: 1 1 100%;
@@ -221,9 +187,6 @@
   }
 
   /* FOUR COLUMN LAYOUT --------------------------------------- */
-  /* Each row of images */
-
-  /* Each column (image container) */
   .column4 {
     flex: 1 1 20%;
     max-width: 30%;
@@ -233,8 +196,6 @@
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
   }
-
-  /* Images themselves */
   .column4 img {
     width: 100%;
     height: 250px;
@@ -242,22 +203,17 @@
     transition: transform 0.5s ease, filter 0.3s ease;
     display: block;
   }
-
-  /* Hover effect */
   .column4:hover img {
     transform: scale(1.05);
     filter: brightness(0.9);
     cursor: pointer;
   }
-
-  /* Responsive layout */
   @media (max-width: 900px) {
     .column4 {
       flex: 1 1 45%;
       max-width: 45%;
     }
   }
-
   @media (max-width: 600px) {
     .column4 {
       flex: 1 1 100%;
@@ -277,7 +233,7 @@
     justify-content: flex-start;
   }
   .button-icons ul li a{
-    color: white; /* or your theme color */
+    color: white; 
     font-size: 2.5rem;
     transition: color 0.3s ease;
   }
@@ -286,24 +242,23 @@
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 15px; /* space between icons */
+    gap: 15px; 
     float: right;
   }
   .image-text {
     position: absolute;
-    top: 50%; /* vertically centered */
-    left: 50%; /* horizontally centered */
+    top: 50%; 
+    left: 50%; 
     transform: translate(-50%, -50%);
     color: white;
     font-size: 2.5rem;
     font-weight: bold;
     letter-spacing: 1px;
-    background-color: rgba(0, 0, 0, 0.5); /* subtle dark overlay */
+    background-color: rgba(0, 0, 0, 0.5); 
     padding: 8px 16px;
     border-radius: 6px;
-    pointer-events: none; /* text won't block clicks on the link */
+    pointer-events: none; 
   }
-  /* CONTACT SECTION LAYOUT */
   .contact-section {
     display: flex;
     align-items: center;
@@ -447,3 +402,20 @@
       margin-bottom: 10px;        
     }
   }
+
+/* ============================================
+   MOBILE (PHONES)
+============================================ */
+@media (max-width: 600px) {
+
+  main {
+    padding: 0 5%; 
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 1rem;
+    padding: 0 2%;
+  }
+}
