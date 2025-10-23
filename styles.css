@@ -33,8 +33,11 @@
     padding: 10px 0;
   }
   .navbar ul {
+    display: flex;
+    gap: 20px; /* space between links */
     list-style: none;
-    object-fit: cover;
+    margin: 0;
+    padding: 0;
   }
   .navbar ul li a {
     display: block;
@@ -143,6 +146,11 @@
       height: 60%;
     }
   }
+  @media (max-width:900px){
+    .background-image{
+      height: 50%;
+    } 
+  }
 /* ============================================
   CONTENT SECTIONS
 ============================================ */
@@ -198,14 +206,14 @@
   }
 
   /* Responsive layout */
-  @media (max-width: 900px) {
+  /* @media (max-width: 00px) {
     .column {
       flex: 1 1 45%;
       max-width: 45%;
     }
-  }
+  } */
 
-  @media (max-width: 600px) {
+  @media (max-width: 900px) {
     .column {
       flex: 1 1 100%;
       max-width: 100%;
