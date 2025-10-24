@@ -420,6 +420,8 @@
     height: 115px;
     margin-bottom: 10px;
   }
+}
+@media (max-width:900px) {
   .navbar ul {
     flex-direction: column;
     align-items: right;
@@ -430,5 +432,4 @@
     font-size: 1rem;
     padding: 10px 0;
   }
-
 }
